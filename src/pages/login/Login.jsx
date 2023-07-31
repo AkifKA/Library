@@ -1,5 +1,12 @@
 import React from "react";
-import { FormContainer, Header, LoginContainer } from "./Login.style";
+import {
+  FormContainer,
+  Header,
+  LoginContainer,
+  StyledButton,
+  StyledForm,
+  StyledInput,
+} from "./Login.style";
 
 const Login = () => {
   return (
