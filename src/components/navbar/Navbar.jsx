@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Logo, Nav } from "./Navbar.style";
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <Nav>
+      <Logo to="/">MAK LIBRARY</Logo>
+    </Nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
