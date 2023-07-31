@@ -11,6 +11,7 @@ import Detail from "../pages/detail/Detail";
 
 const AppRouter = () => {
   const [currentUser, setCurrentUser] = useState(false);
+  const [currentPassword, setCurrentPassword] = useState("");
 
   return (
     <BrowserRouter>
@@ -19,7 +20,14 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route
           path="/login"
-          element={<Login setCurrentUser={setCurrentUser} />}
+          element={
+            <Login
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
+              currentPassword={currentPassword}
+              setCurrentPassword={setCurrentPassword}
+            />
+          }
         />
         <Route path="/register" element={<Register />} />
         <Route element={<PrivateRouter />}>

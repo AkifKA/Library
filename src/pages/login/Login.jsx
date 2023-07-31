@@ -13,15 +13,15 @@ import { toastSuccessNotify } from "../../helper/ToastNotify";
 const Login = ({
   currentUser,
   setCurrentUser,
-  CurrentPassword,
+  currentPassword,
   setCurrentPassword,
 }) => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sessionStorage.setItem("user", currentUser);
-    sessionStorage.setItem("user", CurrentPassword);
+    sessionStorage.setItem("currentUser", currentUser);
+    sessionStorage.setItem("currentPassword", currentPassword);
     toastSuccessNotify("Logged in succesfully!");
     navigate(-1);
   };
