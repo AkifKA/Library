@@ -4,14 +4,12 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import Home from "../pages/home/Home";
 import Login from "../pages/login/Login";
-import Register from "../pages/register/Register";
 import PrivateRouter from "./PrivateRouter";
 import About from "../pages/about/About";
 import Detail from "../pages/detail/Detail";
 
 const AppRouter = () => {
   const [currentUser, setCurrentUser] = useState(false);
-  const [currentPassword, setCurrentPassword] = useState("");
 
   return (
     <BrowserRouter>
@@ -21,15 +19,9 @@ const AppRouter = () => {
         <Route
           path="/login"
           element={
-            <Login
-              currentUser={currentUser}
-              setCurrentUser={setCurrentUser}
-              currentPassword={currentPassword}
-              setCurrentPassword={setCurrentPassword}
-            />
+            <Login currentUser={currentUser} setCurrentUser={setCurrentUser} />
           }
         />
-        <Route path="/register" element={<Register />} />
         <Route element={<PrivateRouter />}>
           <Route path="/about" element={<About />} />
           <Route path="/detail" element={<Detail />} />

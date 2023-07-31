@@ -7,13 +7,13 @@ const Navbar = ({ currentUser, setCurrentUser }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleLogout = () => {
-    setCurrentUser(false);
+    setCurrentUser("");
     sessionStorage.clear();
   };
 
   return (
     <Nav justify="space-between" wrap="wrap">
-      <Logo to="/">MAK LIBRARY</Logo>
+      <Logo to="/">MAK LIBRARY </Logo>
       <HamburgerIcon onClick={() => setShowMenu(!showMenu)}>
         {menuIcon}
       </HamburgerIcon>

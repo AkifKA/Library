@@ -2,9 +2,10 @@ import React from "react";
 import { Navigate, Outlet } from "react-router-dom";
 
 const PrivateRouter = () => {
-  const user = sessionStorage.getItem("user");
+  const user = sessionStorage.getItem("currentUser");
+  const password = sessionStorage.getItem("currentPassword");
 
-  return user ? <Outlet /> : <Navigate to="/login" />;
+  return user && password ? <Outlet /> : <Navigate to="/login" />;
 };
 
 export default PrivateRouter;
