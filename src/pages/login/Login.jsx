@@ -8,14 +8,21 @@ import {
   StyledInput,
 } from "./Login.style";
 import { useNavigate } from "react-router-dom";
+import { toastSuccessNotify } from "../../helper/ToastNotify";
 
-const Login = ({ setCurrentUser }) => {
+const Login = ({
+  currentUser,
+  setCurrentUser,
+  CurrentPassword,
+  setCurrentPassword,
+}) => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCurrentUser(true);
-    sessionStorage.setItem("user", true);
+    sessionStorage.setItem("user", currentUser);
+    sessionStorage.setItem("user", CurrentPassword);
+    toastSuccessNotify("Logged in succesfully!");
     navigate(-1);
   };
 
@@ -24,11 +31,17 @@ const Login = ({ setCurrentUser }) => {
       <FormContainer>
         <Header>Login Here</Header>
         <StyledForm onSubmit={handleSubmit}>
-          <StyledInput type="text" placeholder="Enter your username" required />
+          <StyledInput
+            type="text"
+            placeholder="Enter your username"
+            required
+            onChange={(e) => setCurrentUser(e.target.value)}
+          />
           <StyledInput
             type="password"
             placeholder="Enter your password"
             required
+            onChange={(e) => setCurrentPassword(e.target.value)}
           />
           <StyledButton type="submit">Login</StyledButton>
         </StyledForm>
