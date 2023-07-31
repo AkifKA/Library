@@ -6,10 +6,11 @@ export const GlobalStyles = createGlobalStyle`
         padding:0;
         box-sizing:border-box;
         text-transform:uppercase;
-        font-family: 'Shantell Sans', cursive;
+        font-family: 'Roboto', sans-serif;
     }
     body{
         font-size:1.5rem;
-        background: ${({ theme }) => theme.colors.mainColor}
+        background: ${({ theme }) => theme.colors.mainColor};
+        color:  ${({ theme }) => theme.colors.fontColor};
     }
 `;
