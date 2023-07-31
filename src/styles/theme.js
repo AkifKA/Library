@@ -2,7 +2,7 @@
 export const theme = {
   colors: {
     navbarBgColor: "white",
-    mainColor: "#5691c8",
+    mainColor: "#343E47",
     logoColor: "darkslategray",
     linkColor: "#8B7E74",
     linkHoverColor: "rgb(5,5,5)",

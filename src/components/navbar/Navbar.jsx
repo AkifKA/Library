@@ -1,10 +1,13 @@
 import React from "react";
-import { Logo, Nav } from "./Navbar.style";
+import { Logo, Menu, MenuLink, Nav } from "./Navbar.style";
 
 const Navbar = () => {
   return (
-    <Nav>
+    <Nav justify="space-between">
       <Logo to="/">MAK LIBRARY</Logo>
+      <Menu>
+        <MenuLink to="home">Home</MenuLink>
+      </Menu>
     </Nav>
   );
 };
