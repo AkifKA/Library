@@ -3,7 +3,7 @@ import Flex from "../../styles/Flex";
 
 export const LoginContainer = styled(Flex)`
   height: 90vh;
-  background-image: url("https://picsum.photos/1600/900");
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,13 +18,10 @@ export const FormContainer = styled(Flex)`
 `;
 export const Header = styled.h1`
   font-size: 2rem;
+  text-transform: uppercase;
   text-align: center;
   width: 100%;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  transform: translate(0.1em, 0.1em);
-  background-image: linear-gradient(305deg, darkblue, yellow, darkblue);
-  -webkit-background-clip: text;
+  color: #b54116;
 `;
 
 export const StyledForm = styled.form`

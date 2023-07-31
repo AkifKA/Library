@@ -16,7 +16,7 @@ const Login = () => {
         <StyledForm>
           <StyledInput type="text" placeholder="Enter your username" />
           <StyledInput type="password" placeholder="Enter your password" />
-          <StyledButton type="subit" />
+          <StyledButton type="subit">Login</StyledButton>
         </StyledForm>
       </FormContainer>
     </LoginContainer>
