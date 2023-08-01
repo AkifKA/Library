@@ -17,6 +17,11 @@ export const DetailPart = styled(Flex)`
   border-radius: 5px;
   width: 80%;
   background-color: ${({ theme }) => theme.colors.detailBgColor};
+  @media (max-width: ${({ theme }) => theme.screens.lg}) {
+    img {
+      width: 300px;
+    }
+  }
 `;
 
 export const DetailTitle = styled.h3`
