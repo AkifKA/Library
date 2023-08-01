@@ -35,8 +35,6 @@ export const DetailImg = styled.div`
     border-radius: 1rem;
     max-width: 250px;
     max-height: 250px;
-   
-  }
   }
 `;
 
