@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ButtonsContainer, FooterContainer } from "./Footer.style";
-import Buttons from "./Buttons";
+import { FooterContainer } from "./Footer.style";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState("");
