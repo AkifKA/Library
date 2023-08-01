@@ -7,13 +7,22 @@ import {
   SearchInput,
   SelectBox,
 } from "./Header.style";
+import { useNavigate } from "react-router-dom";
+import { toastWarnNotify } from "../../helper/ToastNotify";
 
 const Header = ({ setQuery, setSelectType, getData }) => {
   const printType = ["All", "Books", "Magazines"];
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getData();
+    const user = sessionStorage.getItem("user");
+    if (user) {
+      getData();
+    } else {
+      toastWarnNotify("Please login first...");
+      navigate("/login");
+    }
   };
 
   return (
