@@ -3,6 +3,7 @@ import Flex from "../../styles/Flex";
 
 export const DetailContainer = styled(Flex)`
   flex-direction: column;
+
   padding: 1rem;
   h2{
     color: ${({ theme }) => theme.colors.detailColor}}
@@ -15,7 +16,7 @@ export const DetailPart = styled(Flex)`
   margin: 1rem;
   border: 1px solid white;
   border-radius: 5px;
-  width: 80%;
+  min-width: 30vw;
   background-color: ${({ theme }) => theme.colors.detailBgColor};
 `;
 
@@ -29,8 +30,10 @@ export const DetailImg = styled.div`
 
   img {
     border-radius: 1rem;
+    max-width: 300px;
+    max-height: 300px;
     @media (max-width: ${({ theme }) => theme.screens.lg}) {
-      width: 250px;
+      width: 300px;
     }
   }
   }
