@@ -32,6 +32,11 @@ const Login = ({ setCurrentUser }) => {
             placeholder="Enter your password"
             required
           />
+          <p
+            style={{ fontSize: "12px", textAlign: "center", marginTop: "5px" }}
+          >
+            (Type anything to login for now...)
+          </p>
           <StyledButton type="submit">Login</StyledButton>
         </StyledForm>
       </FormContainer>

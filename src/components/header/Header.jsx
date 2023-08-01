@@ -20,7 +20,7 @@ const Header = ({ setQuery, setSelectType, getData }) => {
     if (user) {
       getData();
     } else {
-      toastWarnNotify("Please login first...");
+      toastWarnNotify("Please login firstly...");
       navigate("/login");
     }
   };
