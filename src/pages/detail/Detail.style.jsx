@@ -18,6 +18,7 @@ export const DetailPart = styled(Flex)`
   border-radius: 5px;
   min-width: 25vw;
   background-color: ${({ theme }) => theme.colors.detailBgColor};
+  color: ${({ theme }) => theme.colors.detailColor};
 `;
 
 export const DetailTitle = styled.h3`
@@ -32,9 +33,7 @@ export const DetailImg = styled.div`
     border-radius: 1rem;
     max-width: 300px;
     max-height: 300px;
-    @media (max-width: ${({ theme }) => theme.screens.lg}) {
-      width: 250px;
-    }
+   
   }
   }
 `;
