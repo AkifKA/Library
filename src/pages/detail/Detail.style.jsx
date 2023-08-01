@@ -4,6 +4,10 @@ import Flex from "../../styles/Flex";
 export const DetailContainer = styled(Flex)`
   flex-direction: column;
   padding: 1rem;
+  h2{
+    color: ${({ theme }) => theme.colors.detailColor}}
+  }
+
 `;
 
 export const DetailPart = styled(Flex)`
@@ -13,8 +17,6 @@ export const DetailPart = styled(Flex)`
   border-radius: 5px;
   width: 80%;
   background-color: ${({ theme }) => theme.colors.detailBgColor};
-  color: ${({ theme }) => theme.colors.detailColor}};
-
 `;
 
 export const DetailTitle = styled.h3`

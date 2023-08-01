@@ -7,6 +7,7 @@ export const LoginContainer = styled(Flex)`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: ${({ theme }) => theme.colors.loginBgOpacity}};
 `;
 
 export const FormContainer = styled(Flex)`
@@ -21,7 +22,7 @@ export const Header = styled.h1`
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  color: ${({ theme }) => theme.colors.navbarBgColor};
+  color: ${({ theme }) => theme.colors.navbarBgColor}};
 `;
 
 export const StyledForm = styled.form`

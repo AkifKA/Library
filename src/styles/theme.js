@@ -13,6 +13,7 @@ export const lightheme = {
     headerFormColor: "rgba(15, 63, 42, 0.36)",
     fontColor: "black",
     footerCopyColor: "black",
+    loginBgOpacity: 1,
   },
 
   screens: {
@@ -34,6 +35,7 @@ export const darktheme = {
     headerFormColor: "rgba(255, 255, 255, 0.46)",
     fontColor: "black",
     footerCopyColor: "white",
+    loginBgOpacity: 0.6,
   },
   screens: {
     lg: "992px",
