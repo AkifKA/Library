@@ -5,6 +5,8 @@ export const GlobalStyles = createGlobalStyle`
         margin:0;
         padding:0;
         box-sizing:border-box;
+        /* text-transform:uppercase; */
+        text-transform: capitalize;
         font-family: 'Roboto', sans-serif;
     }
     body{
