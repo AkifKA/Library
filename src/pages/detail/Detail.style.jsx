@@ -6,7 +6,7 @@ export const DetailContainer = styled(Flex)`
   padding: 1rem;
 `;
 
-export const DetailTitle = styled.h1`
+export const DetailTitle = styled.h3`
   margin: 25px;
   text-align: center;
 `;
@@ -22,16 +22,12 @@ export const DetailImg = styled.div`
 export const Description = styled.div`
   min-width: 40%;
   text-align: justify;
-  font-size: 1.5rem;
-  margin: 1rem 2rem;
+  font-size: 1rem;
+  padding: 0.5rem;
 `;
-
-export const InfoPart = styled.div`
-  min-width: 40%;
-  font-size: 1.4rem;
-  margin: 2rem;
-  text-align: center;
-  span {
-    margin: 1rem;
-  }
+export const SubTitle = styled.div`
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
 `;
