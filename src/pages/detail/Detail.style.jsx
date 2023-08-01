@@ -33,7 +33,7 @@ export const DetailImg = styled.div`
     max-width: 300px;
     max-height: 300px;
     @media (max-width: ${({ theme }) => theme.screens.lg}) {
-      width: 300px;
+      width: 250px;
     }
   }
   }
