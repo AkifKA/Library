@@ -15,12 +15,13 @@ const Detail = () => {
 
   return (
     <DetailContainer>
+      <h2>Book Detail</h2>
       <DetailPart>
-        <table border={2} style={{ width: "70wv" }}>
+        <table border={1} style={{ width: "70wv", borderRadius: "10px" }}>
           <tbody>
             <tr>
               <td colSpan={2}>
-                <DetailTitle>{state.volumeInfo.title}</DetailTitle>
+                <DetailTitle>{state.volumeInfo.title || "No data"}</DetailTitle>
               </td>
             </tr>
             <tr>
@@ -39,7 +40,9 @@ const Detail = () => {
               </td>
               <td>
                 {" "}
-                <Description>{state.volumeInfo.description}</Description>
+                <Description>
+                  {state.volumeInfo?.description || "No data"}
+                </Description>
               </td>
             </tr>
             <tr>
@@ -49,7 +52,7 @@ const Detail = () => {
               </td>
               <td>
                 <Description>
-                  {state.volumeInfo?.language.toUpperCase()}
+                  {state.volumeInfo?.language.toUpperCase() || "No data"}
                 </Description>
               </td>
             </tr>
@@ -76,7 +79,9 @@ const Detail = () => {
               </td>
               <td>
                 {" "}
-                <Description>{state.volumeInfo.publisher}</Description>
+                <Description>
+                  {state.volumeInfo?.publisher || "No data"}
+                </Description>
               </td>
             </tr>
             <tr>
@@ -84,7 +89,9 @@ const Detail = () => {
                 <SubTitle>Publisher Date</SubTitle>{" "}
               </td>
               <td>
-                <Description>{state.volumeInfo.publishedDate}</Description>
+                <Description>
+                  {state.volumeInfo.publishedDate || "No data"}
+                </Description>
               </td>
             </tr>
             <tr>
@@ -93,7 +100,7 @@ const Detail = () => {
               </td>
               <td>
                 <Description>
-                  {state.saleInfo?.listPrice?.amount || "No amount information"}{" "}
+                  {state.saleInfo?.listPrice?.amount || "No data"}
                   <span>{state.saleInfo.listPrice?.currencyCode}</span>
                 </Description>
               </td>

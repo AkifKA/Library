@@ -3,7 +3,7 @@ import Flex from "../../styles/Flex";
 
 export const LoginContainer = styled(Flex)`
   height: 90vh;
-  background-image: url("https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581_1280.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/29/21/38/peabody-institute-1629259_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@ export const Header = styled.h1`
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  color: #b54116;
+  color: ${({ theme }) => theme.colors.navbarBgColor};
 `;
 
 export const StyledForm = styled.form`
@@ -32,7 +32,7 @@ export const StyledForm = styled.form`
   top: 50%;
   left: 50%;
   border-radius: 15px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   padding: 2rem;

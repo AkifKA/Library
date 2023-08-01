@@ -17,6 +17,7 @@ export const HeaderTitle = styled.h2`
 
 export const HeaderForm = styled.form`
   display: flex;
+  gap: 0.1rem;
   width: 45%;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,7 +48,7 @@ export const SearchInput = styled.input`
   border-bottom-left-radius: 1rem;
   background-color: rgb(255, 255, 255, 0.5);
   ::placeholder {
-    text-transform: capitalize;
+    font-size: 1.5rem;
   }
   @media (max-width: ${({ theme }) => theme.screens.lg}) {
     width: 100%;

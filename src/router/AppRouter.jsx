@@ -8,6 +8,7 @@ import PrivateRouter from "./PrivateRouter";
 import About from "../pages/about/About";
 import Detail from "../pages/detail/Detail";
 import { GlobalStyles } from "../styles/Global.styles";
+import Register from "../pages/register/Register";
 
 const AppRouter = ({ myTheme, setMyTheme }) => {
   const [currentUser, setCurrentUser] = useState(
@@ -24,6 +25,7 @@ const AppRouter = ({ myTheme, setMyTheme }) => {
           path="/login"
           element={<Login setCurrentUser={setCurrentUser} />}
         />
+        <Route path="/register" element={<Register />} />
         <Route element={<PrivateRouter />}>
           <Route path="/about" element={<About />} />
           <Route path="/detail/:id" element={<Detail />} />

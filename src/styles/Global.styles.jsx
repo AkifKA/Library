@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
         padding:0;
         box-sizing:border-box;
         /* text-transform:uppercase; */
-        text-transform: capitalize;
+        /* text-transform: capitalize; */
         font-family: 'Roboto', sans-serif;
     }
     body{

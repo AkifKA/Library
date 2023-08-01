@@ -2,7 +2,7 @@
 export const lightheme = {
   colors: {
     navbarBgColor: "white",
-    mainColor: "#86C8BC",
+    mainColor: "#5166F0",
     logoColor: "darkslategray",
     linkColor: "#8B7E74",
     detailBgColor: "#e1f1dd",
