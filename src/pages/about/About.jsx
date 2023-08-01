@@ -8,6 +8,7 @@ import {
 import profile from "../../assets/avataaars.png";
 import Icon from "../../components/icon/Icon";
 import { iconData } from "../../helper/iconData";
+import Buttons from "../../components/buttons/Buttons";
 
 const About = () => {
   return (
@@ -28,6 +29,7 @@ const About = () => {
           </a>
         ))}
       </IconContainer>
+      <Buttons />
     </AboutContainer>
   );
 };
