@@ -10,18 +10,13 @@ import {
 import { useNavigate } from "react-router-dom";
 import { toastSuccessNotify } from "../../helper/ToastNotify";
 
-const Login = ({
-  currentUser,
-  setCurrentUser,
-  currentPassword,
-  setCurrentPassword,
-}) => {
+const Login = ({ setCurrentUser }) => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sessionStorage.setItem("currentUser", currentUser);
-    sessionStorage.setItem("currentPassword", currentPassword);
+    setCurrentUser("akifka");
+    sessionStorage.setItem("user", "akifka");
     toastSuccessNotify("Logged in succesfully!");
     navigate(-1);
   };
@@ -31,17 +26,11 @@ const Login = ({
       <FormContainer>
         <Header>Login Here</Header>
         <StyledForm onSubmit={handleSubmit}>
-          <StyledInput
-            type="text"
-            placeholder="Enter your username"
-            required
-            onChange={(e) => setCurrentUser(e.target.value)}
-          />
+          <StyledInput type="text" placeholder="Enter your username" required />
           <StyledInput
             type="password"
             placeholder="Enter your password"
             required
-            onChange={(e) => setCurrentPassword(e.target.value)}
           />
           <StyledButton type="submit">Login</StyledButton>
         </StyledForm>

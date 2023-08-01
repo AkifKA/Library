@@ -9,7 +9,9 @@ import About from "../pages/about/About";
 import Detail from "../pages/detail/Detail";
 
 const AppRouter = () => {
-  const [currentUser, setCurrentUser] = useState(false);
+  const [currentUser, setCurrentUser] = useState(
+    sessionStorage.getItem("user")
+  );
 
   return (
     <BrowserRouter>
@@ -18,9 +20,7 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route
           path="/login"
-          element={
-            <Login currentUser={currentUser} setCurrentUser={setCurrentUser} />
-          }
+          element={<Login setCurrentUser={setCurrentUser} />}
         />
         <Route element={<PrivateRouter />}>
           <Route path="/about" element={<About />} />
