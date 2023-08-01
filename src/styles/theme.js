@@ -12,7 +12,7 @@ export const lightheme = {
     homeBackIconHoverColor: "blue",
     headerFormColor: "rgba(15, 63, 42, 0.36)",
     fontColor: "black",
-    footerColor: "white",
+    footerCopyColor: "black",
   },
 
   screens: {
@@ -27,13 +27,13 @@ export const darktheme = {
     logoColor: "rgb(5,5,5)",
     linkColor: "rgb(5,5,5)",
     homeBackIconBgColor: "white",
-    homeBackIconHoverColor: "blue",
+    homeBackIconHoverColor: "black",
     detailBgColor: "rgb(15,15,15)",
     detailColor: "white",
     linkHoverColor: "bisque",
     headerFormColor: "rgba(255, 255, 255, 0.46)",
     fontColor: "black",
-    footerColor: "white",
+    footerCopyColor: "white",
   },
   screens: {
     lg: "992px",

@@ -11,9 +11,10 @@ export const DetailPart = styled(Flex)`
   margin: 1rem;
   border: 1px solid white;
   border-radius: 5px;
+  width: 80%;
   background-color: ${({ theme }) => theme.colors.detailBgColor};
   color: ${({ theme }) => theme.colors.detailColor}};
-  width: 80%;
+
 `;
 
 export const DetailTitle = styled.h3`

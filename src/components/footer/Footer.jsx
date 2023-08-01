@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FooterBtn, FooterContainer } from "./Footer.style";
+import { FooterBtn, FooterBtnContainer, FooterContainer } from "./Footer.style";
 import { lightIcon, darkIcon } from "../../helper/iconData";
 
 const Footer = ({ myTheme, setMyTheme }) => {
@@ -24,10 +24,12 @@ const Footer = ({ myTheme, setMyTheme }) => {
 
   return (
     <FooterContainer>
-      <FooterBtn onClick={handleClick} title="Switch theme">
-        {myTheme === "light" ? <>{lightIcon}</> : <>{darkIcon}</>}
-        <span>MAK Full Stack Development {currentYear}©</span>
-      </FooterBtn>
+      <span>MAK Full Stack Development {currentYear}©</span>
+      <FooterBtnContainer>
+        <FooterBtn onClick={handleClick} title="Switch theme">
+          {myTheme === "light" ? <>{lightIcon}</> : <>{darkIcon}</>}
+        </FooterBtn>
+      </FooterBtnContainer>
     </FooterContainer>
   );
 };

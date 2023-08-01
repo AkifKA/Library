@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import Flex from "../../styles/Flex";
 
-export const FooterContainer = styled.div`
-  position: relative;
+export const FooterContainer = styled(Flex)`
   margin: 1rem;
   font-size: 1rem;
-  color: ${({ theme }) => theme.colors.footerColor};
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.footerCopyColor};
 `;
 
+export const FooterBtnContainer = styled.div`
+  position: relative;
+`;
 export const FooterBtn = styled.button`
   border: none;
   outline: none;
@@ -15,4 +18,5 @@ export const FooterBtn = styled.button`
   cursor: pointer;
   position: fixed;
   bottom: 0px;
+  left: 1px;
 `;
