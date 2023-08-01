@@ -7,8 +7,9 @@ import Login from "../pages/login/Login";
 import PrivateRouter from "./PrivateRouter";
 import About from "../pages/about/About";
 import Detail from "../pages/detail/Detail";
+import { GlobalStyles } from "../styles/Global.styles";
 
-const AppRouter = () => {
+const AppRouter = ({ myTheme, setMyTheme }) => {
   const [currentUser, setCurrentUser] = useState(
     sessionStorage.getItem("user")
   );
@@ -16,6 +17,7 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
+      <GlobalStyles />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -27,7 +29,7 @@ const AppRouter = () => {
           <Route path="/detail/:id" element={<Detail />} />
         </Route>
       </Routes>
-      <Footer />
+      <Footer myTheme={myTheme} setMyTheme={setMyTheme} />
     </BrowserRouter>
   );
 };

@@ -35,6 +35,9 @@ export const MenuLink = styled(NavLink)`
   :hover {
     color: ${({ theme }) => theme.colors.linkHoverColor};
   }
+  .active {
+    color: blue;
+  }
 `;
 
 export const HamburgerIcon = styled.div`

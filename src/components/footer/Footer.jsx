@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FooterContainer } from "./Footer.style";
+import { FooterBtn, FooterContainer } from "./Footer.style";
+import { lightIcon, darkIcon } from "../../helper/iconData";
 
-const Footer = () => {
+const Footer = ({ myTheme, setMyTheme }) => {
   const [currentYear, setCurrentYear] = useState("");
 
   useEffect(() => {
@@ -13,9 +14,20 @@ const Footer = () => {
     updateCurrentYear();
   }, []);
 
+  const handleClick = () => {
+    if (myTheme === "light") {
+      setMyTheme("dark");
+    } else {
+      setMyTheme("light");
+    }
+  };
+
   return (
     <FooterContainer>
-      <p>MAK Full Stack Development {currentYear}©</p>
+      <FooterBtn onClick={handleClick} title="Switch theme">
+        {myTheme === "light" ? <>{lightIcon}</> : <>{darkIcon}</>}
+        <span>MAK Full Stack Development {currentYear}©</span>
+      </FooterBtn>
     </FooterContainer>
   );
 };
