@@ -33,8 +33,8 @@ export const DetailImg = styled.div`
 
   img {
     border-radius: 1rem;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
    
   }
   }
