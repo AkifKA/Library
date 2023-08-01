@@ -14,17 +14,13 @@ const Navbar = ({ currentUser, setCurrentUser }) => {
 
   return (
     <Nav justify="space-between" wrap="wrap">
-      <Logo to="/">Clarus Library</Logo>
+      <Logo to="/">MAK Library</Logo>
       <HamburgerIcon onClick={() => setShowMenu(!showMenu)}>
         {menuIcon}
       </HamburgerIcon>
       <Menu showMenu={showMenu}>
         <MenuLink to="/">Home</MenuLink>
         <MenuLink to="/about">About</MenuLink>
-        {/* <MenuLink to="/register">Register</MenuLink>
-        <MenuLink to="/login">Login</MenuLink>
-        <MenuLink to="/login">Logout</MenuLink> */}
-
         {currentUser ? (
           <MenuLink to="/login" onClick={logout}>
             Logout
