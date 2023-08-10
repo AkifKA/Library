@@ -1,5 +1,5 @@
 
-# Projecet: MAK Library
+# MAK Library Projecet: 
 
 # Project Owerview
 MAK library app has been created using React and various related technologies. An overview of the main components and technologies employed in the project is provided below:
@@ -39,9 +39,8 @@ The application employs a modular structure, with each component responsible for
 
 <img align="center" width="800" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemh2aW05aGtkbTMzNm82cXFsdGZrYnd0bjRneDV3M2IxeXBidmdnaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r7mh8rEkm2dJCH94ID/giphy.gif" />
 
-```
 ## Project Skeleton
-
+```
 ├── public
 │     └── index.html
 ├── src
