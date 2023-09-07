@@ -1,23 +1,46 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-# Project : Clarus Library
+# MAK Library Projecet: 
 
-## Description
+# Project Owerview
+MAK library app has been created using React and various related technologies. An overview of the main components and technologies employed in the project is provided below:
 
-Project aims to create a Clarus Library.
+## Components:
 
-## Problem Statement
+Button.jsx: A component containing navigation buttons that utilize react-router-dom for routing. <br>
+Card.jsx: Book information, including its title, image, and a "View More" button for details, is displayed.<br>
+Footer.jsx: Copyright information is presented in the footer, along with a theme-switching button for toggling between light and dark themes.<br>
+Header.jsx: A search bar and a dropdown for filtering book results based on print type are rendered.<br>
+Icon.jsx: SVG icons are rendered based on provided data.<br>
+Navbar.jsx: A navigation bar component displaying links for Home, About, Register, and Login is presented, adapting to user authentication status.<br>
+About.jsx: Information about the developer and social media links are showcased.<br>
+Detail.jsx: Comprehensive information about a selected book is displayed.<br>
+Home.jsx: A search bar and a list of cards representing books based on user queries are shown.<br>
+Login.jsx: Users can simulate login procedures on this page.<br>
+Register.jsx: A placeholder component indicates that the registration feature is currently being developed.<br>
+AppRouter.jsx: Application routes are established and user authentication and private routes are managed using react-router-dom.<br>
+PrivateRouter.jsx: Private routes are handled based on user authentication.<br>
+Flex.jsx: A utility component for applying flexbox layout styling.<br>
+GlobalStyles.jsx: Global styles are defined for the application.<br>
+themes.js: Light and dark themes are defined using styled-components.<br>
+App.js: The main entry point of the application, responsible for theme and router setup.<br>
+index.js: Renders the root component and attaches it to the DOM.<br>
 
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
+## Technologies and Libraries Used:
+
+React: Employed for constructing the user interface and managing the application's state and components. <br>
+react-router-dom: Manages routing and navigation across various views.<br>
+styled-components: Enables component styling using CSS-in-JS.<br>
+axios: Used for making HTTP requests to the Google Books API in order to retrieve book data.<br>
+react-toastify: Provides user notifications, such as success messages.<br>
+FontAwesome: Utilized for rendering icons within the application.<br>
+Environment Variables: Used for storing sensitive data like API keys.<br>
+
+The application employs a modular structure, with each component responsible for specific functionalities. Features such as book searches, detailed book displays, theme changes, and simulated user authentication are incorporated. The provided code snippets illustrate the implementation of these features using React and related technologies.<br>
+
+<img align="center" width="800" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemh2aW05aGtkbTMzNm82cXFsdGZrYnd0bjRneDV3M2IxeXBidmdnaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r7mh8rEkm2dJCH94ID/giphy.gif" />
 
 ## Project Skeleton
-
 ```
-007 - Clarus Library (folder)
-|
-|----readme.md         # Given to the students (Definition of the project)
-SOLUTION
 ├── public
 │     └── index.html
 ├── src
@@ -73,61 +96,3 @@ SOLUTION
 ├── package.json
 └── yarn.lock
 ```
-
-## Expected Outcome
-
-![Clarus Library](clarus-library.gif)
-
-## Objective
-
-Build a Clarus Library using ReactJS.
-
-### At the end of the project, following topics are to be covered;
-
-- HTML
-
-- CSS
-
-- JS
-
-- ReactJS
-
-### At the end of the project, students will be able to;
-
-- improve coding skills within HTML & CSS & JS & ReactJS.
-
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
-
-## Steps to Solution
-
-- Step 1: Create React App using `yarn create react-app clarus-library`or `npx create-react-app clarus-library`
-
-- Step 2: Go to `https://developers.google.com/books/docs/v1/using?hl=tr` and get api key.
-
-- Step 3 : Using api key and `axios` for getting data from `https://www.googleapis.com/books/v1/volumes?q=${query}&printType=${printType}&key=${APP_KEY}`.
-
-- Step 4: You are expected to code your project with **styled component**
-
-- Step 5 : You can get random login background image from `https://picsum.photos/1600/900`
-
-- Step 6: Add project gif to your project and README.md file.
-
-## Notes
-
-- You can add additional functionalities to your app.
-
-## Demo
-  <a href="https://clarus-library.vercel.app/" target="_blank">Clarus Library</a>
-
-## Google Books API
-
-<a href="https://developers.google.com/books/docs/v1/using" target="_blank">Google Books API</a>
-
-
-## How can we create an apikey for the Google Books API ? Watch the video!
-<a href="https://www.youtube.com/watch?v=lg6yA8oSW3s" target="_blank">
-Watch the video
-</a>
-
-
-**<p align="center">&#9786; Happy Coding &#9997;</p>**
